@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Propelrr - AJAX Form Test</title>
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+    />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="form.js"></script>
+</head>
+  <body>
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1>Propelrr - AJAX Form Test</h1>
+
+      <form action="process.php" method="POST">
+        <div id="name-group" class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Full Name"
+          />
+        </div>
+
+        <div id="email-group" class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+          />
+        </div>
+
+        <div id="mobile-no-group" class="form-group">
+          <label for="mobileNo">Mobile Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="mobileNo"
+            name="mobileNo"
+            placeholder="09170000000"
+            pattern="[0]{1}[0-9]{10}" 
+          />
+        </div>
+
+        <div id="birthdate-group" class="form-group">
+          <label for="birthdate">Birthdate</label>
+          <input
+            type="date"
+            class="form-control"
+            id="birthdate"
+            name="birthdate"
+          />
+        </div>
+
+        <div id="gender-group" class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" class="form-control">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-success">
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
